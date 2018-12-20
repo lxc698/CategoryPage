@@ -1,0 +1,2244 @@
+@media only screen and (max-device-width: 325px) {
+
+  #headerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerLaptop,
+  #headerTablet {
+    display: none;
+  }
+  #footerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
+
+  .top-navigation{
+    width: 100%;
+    margin-left: 0%;
+  }
+ 
+  .filters{
+    width: 100%;
+  }
+
+  #filters-logo-collapse{
+    width: 142px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 14px;
+    display: inline-flex;
+    font-weight: 550;
+    border: 1px solid #000;
+    margin-top: 17%;
+    font-family: "Trebuchet Ms", sans-serif;
+    padding: 13px 7px 0px ;
+    margin-left: 2%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png) 96% / 15% no-repeat;
+  }
+
+  #filters-title{
+    display: none;
+  }
+
+  .products-left-side{
+    width: 100%;
+    margin-top: -28%;
+    position: absolute;
+    margin-left: -21.5%;
+  }
+
+  .product-box{
+    width: 97%;
+  }
+
+  .products-right-side{
+    width: none;
+    margin-right: 25%;
+    margin-top: -19.5%;
+  }
+
+  .styled-select{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .custom-select{
+    width: 146px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 14px;
+     border-radius: 0px;
+    position: relative;
+  }
+
+  .filters-collapse{
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 12px;
+  }
+
+  .cancel-buttons{
+    margin-top: -0.5%;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: -26%;
+  }
+
+  #nike-cancel,
+  #sleeve-cancel{
+    display: inline-block;
+  }
+
+  #sleeve-cancel{
+    display: none;
+  }
+
+  .column{
+    width: 50%;
+    padding:4px;
+    margin-left: 0px;
+  }
+
+  .row{
+    margin-top: 0%;
+    margin-right: -4px;
+    margin-left: -40.7px;
+  }
+
+  .products-content{
+    width: 100%;
+    margin-bottom: 12%;
+  }
+
+    .products-content:hover{
+      position: inherit;
+      background-color: unset;
+      border: none;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+
+  .products-content:hover #discount-tag{
+   display: none;
+  }
+
+  .products-content:hover .colors-and-logo{
+    display: unset;
+  }
+
+  .products-content:hover .image-carousel{
+    display: none;
+  }
+
+  .products-content:hover .productTitle{
+    width: unset;
+  }
+
+  .gallery-item{
+    width: 160px;
+    height: 160px;
+    padding: 1px;
+  }
+
+  #discount-tag{
+    position: relative;
+    font-size: 13px;
+    margin-top: -95%;
+    background-color: yellow;
+    width: 30%;
+  }
+
+  .column #gallery-image{
+    width: 160px;
+    height: 160px;
+  }
+
+  .image-description{
+    width: 100%;
+  }
+
+  .colors-and-logo{
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .product-logo{
+    width: 20%;
+    margin-right: -3%;
+  }
+
+  #logo-size{
+    width: 25px;
+    height: 8.75px;
+  }
+
+  .productTitle{
+    width: 100%;
+    padding-top: 4%;
+    margin-left: 5%;
+    border-top: none;
+  }
+
+  #product-price{
+    margin-left: 5%;
+  }
+
+  #new-price,
+  #old-price{
+    font-size: 13px;
+  }
+
+  #saving-price{
+    margin-left: 5%;
+    font-size: 11px;
+  }
+
+  .price-wrap-2-2{
+    margin-left: 72%;
+  }
+}
+
+/*------------ 1. Media for Mobile MAX-DEVICE-WIDTH 375px--------------*/
+@media (min-device-width: 325px) and (max-width: 400px) {
+
+  #headerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerLaptop,
+  #headerTablet {
+    display: none;
+  }
+  #footerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
+  .top-navigation{
+    width: 100%;
+    margin-left: 0%;
+  }
+ 
+  .filters{
+    width: 100%;
+  }
+
+  #filters-logo-collapse{
+    width: 165px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 14px;
+    display: inline-flex;
+    font-weight: 550;
+    border: 1px solid #000;
+    margin-top: 12%;
+    font-family: "Trebuchet Ms", sans-serif;
+    padding: 13px 7px 0px ;
+    margin-left: 2%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png) 96% / 15% no-repeat;
+  }
+
+  #filters-title{
+    display: none;
+  }
+
+  .products-left-side{
+    width: 100%;
+    margin-top: -23%;
+    position: absolute;
+    margin-left: -21.5%;
+  }
+
+  .products-right-side{
+    width: none;
+    margin-right: 25%;
+    margin-top: -16.5%;
+  }
+
+  .styled-select{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .product-box{
+    width: 97%;
+  }
+
+  .custom-select{
+    width: 168px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 14px;
+     border-radius: 0px;
+    position: relative;
+  }
+
+  .filters-collapse{
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 12px;
+  }
+
+  .cancel-buttons{
+    margin-top: -2.5%;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: -26%;
+  }
+
+  #nike-cancel,
+  #sleeve-cancel{
+    display: inline-block;
+  }
+
+  #sleeve-cancel{
+    display: none;
+  }
+
+  .column{
+    width: 50%;
+    padding:4px;
+    margin-left: 0px;
+  }
+
+  .row{
+    margin-top: 0%;
+    margin-right: -4px;
+    margin-left: -48.7px;
+  }
+
+  .products-content{
+    width: 100%;
+    margin-bottom: 12%;
+  }
+
+    .products-content:hover{
+      position: inherit;
+      background-color: unset;
+      border: none;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+
+  .products-content:hover #discount-tag{
+    display: none;
+  }
+
+  .products-content:hover .colors-and-logo{
+    display: unset;
+  }
+
+  .products-content:hover .image-carousel{
+    display: none;
+  }
+
+  .products-content:hover .productTitle{
+    width: unset;
+  }
+
+  .gallery-item{
+    width: 190px;
+    height: 190px;
+    padding: 1px;
+  }
+
+  #discount-tag{
+     position: relative;
+    font-size: 14px;
+    margin-top: -95%;
+    background-color: yellow;
+    width: 27%;
+  }
+
+  .column #gallery-image{
+    width: 190px;
+    height: 190px;
+  }
+
+  .image-description{
+    width: 100%;
+  }
+
+  .colors-and-logo{
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .product-logo{
+    width: 20%;
+    margin-right: -3%;
+  }
+
+  #logo-size{
+    width: 25px;
+    height: 8.75px;
+  }
+
+  .productTitle{
+    width: 100%;
+    padding-top: 4%;
+    margin-left: 5%;
+    border-top: none;
+  }
+
+  #product-price{
+    margin-left: 5%;
+  }
+
+  #new-price,
+  #old-price{
+    font-size: 13px;
+  }
+
+  #saving-price{
+    margin-left: 5%;
+    font-size: 11px;
+  }
+
+  .price-wrap-2-2{
+    margin-left: 76%;
+  }
+
+
+}
+
+/*------------ 1. Media for Mobile MAX-DEVICE-WIDTH 375px--------------*/
+@media (min-device-width: 400px) and (max-width: 767px) {
+  #headerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerLaptop,
+  #headerTablet {
+    display: none;
+  }
+  #footerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
+  
+.top-navigation{
+    width: 100%;
+    margin-left: 0%;
+  }
+ 
+  .filters{
+    width: 100%;
+  }
+
+  #filters-logo-collapse{
+    width: 191px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 16px;
+    display: inline-flex;
+    font-weight: 550;
+    border: 1px solid #000;
+    margin-top: 10%;
+    font-family: "Trebuchet Ms", sans-serif;
+    padding: 13px 7px 0px ;
+    margin-left: 1%;
+    -webkit-appearance: none;
+    position: relative;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png) 96% / 15% no-repeat;
+  }
+
+  #filters-title{
+    display: none;
+  }
+
+  .products-left-side{
+    width: 100%;
+    margin-top: -20%;
+    position: absolute;
+    margin-left: -22.5%;
+  }
+
+  .products-right-side{
+    width: none;
+    margin-right: 25%;
+    margin-top: -15.1%;
+  }
+
+  .product-box{
+    width: 97%;
+  }
+
+  .styled-select{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .custom-select{
+    width: 195px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .filters-collapse{
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 12px;
+  }
+
+  .cancel-buttons{
+    margin-top: -2.5%;
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: -28%;
+  }
+
+  #nike-cancel,
+  #sleeve-cancel{
+    display: inline-block;
+  }
+
+  #sleeve-cancel{
+    display: none;
+  }
+
+  .column{
+    width: 50%;
+    padding:6px;
+    margin-left: 0px;
+  }
+
+  .row{
+    margin-top: 0%;
+    margin-right: -6px;
+    margin-left: -54.7px;
+  }
+
+  .products-content{
+    width: 100%;
+    margin-bottom: 12%;
+  }
+
+    .products-content:hover{
+      position: inherit;
+      background-color: unset;
+      border: none;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+
+  .products-content:hover #discount-tag{
+   display: none;
+  }
+
+  .products-content:hover .colors-and-logo{
+    display: unset;
+  }
+
+  .products-content:hover .image-carousel{
+    display: none;
+  }
+
+  .products-content:hover .productTitle{
+    width: unset;
+  }
+
+  .gallery-item{
+    width: 210px;
+    height: 210px;
+    padding: 0px;
+  }
+
+  #discount-tag{
+     position: relative;
+    font-size: 15px;
+    margin-top: -95%;
+    background-color: yellow;
+    width: 25%;
+  }
+
+  .column #gallery-image{
+    width: 210px;
+    height: 210px;
+  }
+
+  .image-description{
+    width: 100%;
+  }
+
+  .colors-and-logo{
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .product-logo{
+    width: 20%;
+    margin-right: -3%;
+  }
+
+  #logo-size{
+    width: 25px;
+    height: 8.75px;
+  }
+
+  .productTitle{
+    width: 100%;
+    padding-top: 4%;
+    margin-left: 5%;
+    border-top: none;
+  }
+
+  #product-price{
+    margin-left: 5%;
+  }
+
+  #new-price,
+  #old-price{
+    font-size: 13px;
+  }
+
+  #saving-price{
+    margin-left: 5%;
+    font-size: 11px;
+  }
+
+  .price-wrap-2-2{
+    margin-left: 79%;
+  }
+
+  
+
+}
+
+
+
+/*------------ 2. Media for MIN-DEVICE-WIDTH 768px and MAX-DEVICE-WIDTH 980px--------------*/
+
+@media (min-device-width: 768px) and (max-width: 991px) {
+  #headerTablet {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+
+  #headerS,
+  #headerL,
+  #headerLaptop,
+  #headerXL {
+    display: none;
+  }
+  #footerTablet {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerL,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+
+  .top-navigation{
+    width: 100%;
+    margin-left: 0%;
+  }
+ 
+  .filters{
+    width: 100%;
+  }
+
+  #filters-logo-collapse{
+    width: 360px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 16px;
+    display: inline-flex;
+    font-weight: 550;
+    border: 1px solid #000;
+    margin-top: 6%;
+    font-family: "Trebuchet Ms", sans-serif;
+    padding: 13px 7px 0px;
+    margin-left: 0%;
+    -webkit-appearance: none;
+    position: relative;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png) 96% / 9% no-repeat;
+  }
+
+  #filters-title{
+    display: none;
+  }
+
+  .products-left-side{
+    width: 100%;
+    margin-top: -12%;
+    position: absolute;
+    margin-left: -23.1%;
+  }
+
+  .products-right-side{
+    width: none;
+    margin-right: 25%;
+    margin-top: -8.2%;
+  }
+
+  .styled-select{
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .product-box{
+    width: 97%;
+  }
+
+  .custom-select{
+    width: 360px;
+    height: 46px;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 0px;
+    position: relative;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) 96% / 9% no-repeat;
+  }
+
+
+  .filters-collapse{
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 12px;
+  }
+
+  .cancel-buttons{
+    margin-top: -3.5%;
+    margin-bottom: 3.5%;
+    width: 100%;
+    margin-left: -29.7%;
+  }
+
+  #nike-cancel,
+  #sleeve-cancel{
+    display: inline-block;
+  }
+
+  #sleeve-cancel{
+    display: none;
+  }
+
+  .column{
+    width: 24%;
+    padding:3px;
+    margin-left: 4px;
+  }
+
+  .row{
+    margin-top: 0%;
+    margin-right: -6px;
+    margin-left: -96.7px;
+  }
+
+  .products-content{
+    width: 100%;
+    margin-bottom: 12%;
+  }
+
+    .products-content:hover{
+      position: inherit;
+      background-color: unset;
+      border: none;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+      margin-left: 0%;
+    }
+
+  .products-content:hover #discount-tag{
+    display: none;
+  }
+
+  .products-content:hover .colors-and-logo{
+    display: unset;
+  }
+
+  .products-content:hover .image-carousel{
+    display: none;
+  }
+
+  .products-content:hover .productTitle{
+    width: unset;
+  }
+
+  .gallery-item{
+    width: 202px;
+    height: 202px;
+    padding: 0px;
+  }
+
+  
+#discount-tag{
+     position: relative;
+    font-size: 15px;
+    margin-top: -95%;
+    background-color: yellow;
+    width: 26%;
+  }
+
+  .column #gallery-image{
+    width: 202px;
+    height: 202px;
+  }
+
+  .image-description{
+    width: 100%;
+  }
+
+  .colors-and-logo{
+    width: 100%;
+    margin-top: 0%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+    margin-left: 5%;
+  }
+
+  .product-logo{
+    width: 20%;
+    margin-right: -3%;
+  }
+
+  #logo-size{
+    width: 25px;
+    height: 8.75px;
+  }
+
+  .productTitle{
+    width: 100%;
+    padding-top: 4%;
+    margin-left: 5%;
+    border-top: none;
+  }
+
+  #product-price{
+    margin-left: 5%;
+  }
+
+  #new-price,
+  #old-price{
+    font-size: 13px;
+  }
+
+  #saving-price{
+    margin-left: 5%;
+    font-size: 11px;
+  }
+
+   .price-wrap-2-2{
+    margin-left: 87%;
+  }
+
+}
+
+
+/*------------ 3. Media for MAX-WIDTH 1199px and MIN-WIDTH 992px--------------*/
+
+@media (max-width: 1100px) and (min-width: 992px) {
+  #headerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerS {
+    display: none;
+  }
+
+  #filters-logo-collapse{
+    display: none;
+  }
+
+  .column{
+    margin-bottom: 1%;
+  }
+
+  .cancel-buttons{
+    margin-top: -2%;
+    margin-left: -1%;
+  }
+
+  .products-left-side{
+    margin-left: -1.1%;
+  }
+
+  .gallery-item{
+    width: 180px;
+    height: 180px;
+  }
+
+  .styled-select{
+    margin-left: 48%;
+  }
+
+  .column #gallery-image{
+    width: 180px;
+    height: 180px;
+  }
+
+  #discount-tag{
+    margin-top: -93.3%;
+    position: relative;
+    width: 28%;
+    font-size: 14px;
+  }
+
+  .products-content{
+    width: 125%;
+  }
+
+  .products-content:hover{
+    width: 198px;
+    padding-left: 7.8px;
+    padding-right: 0px;
+    padding-bottom: 7px;
+    padding-top: 8.4px;
+    margin-top: -0.95%;
+    margin-left: -0.9%;
+  }
+
+  .products-content:hover #discount-tag{
+   position: absolute;
+   margin-top: -85.8%;
+   width: 26.5%;
+  }
+
+  .price-wrap-2{
+    margin-left: 65%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+  }
+
+  .product-logo{
+    width: 12%;
+  }
+
+  .productTitle{
+    width: 105%;
+  }
+
+  .carousel-row{
+    margin-right: -77px;
+  }
+
+  .price-wrap-2{
+    margin-left: 64%;
+  }
+
+}
+
+@media (max-width: 1200px) and (min-width: 1100px) {
+
+  #headerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerS {
+    display: none;
+  }
+
+  #filters-logo-collapse{
+    display: none;
+  }
+
+  .column{
+    margin-bottom: 1%;
+  }
+
+  .cancel-buttons{
+    margin-top: -2%;
+    margin-left: -1%;
+  }
+
+  .products-left-side{
+    margin-left: -1.1%;
+  }
+
+  .gallery-item{
+    width: 185px;
+    height: 185px;
+  }
+
+  .styled-select{
+    margin-left: 48%;
+  }
+
+  .column #gallery-image{
+    width: 185px;
+    height: 185px;
+  }
+
+  #discount-tag{
+    margin-top: -93.3%;
+    position: relative;
+    width: 28%;
+    font-size: 14px;
+  }
+
+  .products-content{
+    width: 125%;
+  }
+
+  .products-content:hover{
+    width: 198px;
+    padding-left: 7.8px;
+    padding-right: 0px;
+    padding-bottom: 7px;
+    padding-top: 8.4px;
+    margin-top: -0.95%;
+    margin-left: -0.9%;
+  }
+
+  .products-content:hover #discount-tag{
+   position: absolute;
+   margin-top: -85.8%;
+   width: 26.5%;
+  }
+
+  .price-wrap-2{
+    margin-left: 74%;
+  }
+
+  #numberOfColors{
+    width: 35%;
+  }
+
+  .product-logo{
+    width: 12%;
+    margin-right: 6%;
+  }
+
+  .productTitle{
+    width: 98%;
+  }
+
+  .carousel-row{
+    margin-right: -77px;
+  }
+
+}
+
+/*------------END OF 4. Media for SCREEN and MAX-WIDTH 960px --------------*/
+
+
+/*------------ 5. Media for SCREEN and MIN-WIDTH 1200px --------------*/
+
+@media screen and (min-width: 1200px) {
+  #headerL {
+    width: 100%;
+    margin-top: 0%;
+    height: auto;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    position: relative;
+  }
+  #headerXL,
+  #headerS,
+  #headerTablet,
+  #headerXL {
+    display: none;
+  }
+  #footerL {
+    width: 100%;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    position: relative;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+
+  #filters-logo-collapse{
+    display: none;
+  }
+
+  #discount-tag{
+    margin-top: -93.3%;
+    position: relative;
+    width: 29%;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -83.3%;
+     width: 25.6%;
+  }
+
+  .product-logo{
+    margin-right: -35%;
+  }
+
+  .column{
+    width: 20.1%;
+  }
+
+  .products-content{
+    margin-bottom: 8%;
+  }
+
+  .styled-select{
+    margin-left: 55%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  #headerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerLaptop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerS {
+    display: none;
+  }
+
+#filters-logo-collapse{
+    display: none;
+  }
+
+  #discount-tag{
+    margin-top: -93.3%;
+    position: relative;
+    width: 25%;
+  }
+
+  .styled-select{
+    margin-left: 59%;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -85.4%;
+     width: 22.7%;
+  }
+
+  .products-content:hover{
+    width: 243px;
+    margin-left: -0.9%;
+    padding-left: 10.4px;
+    margin-top: -1%;
+  }
+
+  .product-logo{
+    margin-right: -37%;
+  }
+
+  .productTitle{
+    width: 100%;
+  }
+
+  .column{
+    width: 20%;
+  }
+
+  .products-content{
+    margin-bottom: 8%;
+  }
+
+  .gallery-item{
+    width: 220px;
+    height: 220px;
+  }
+  
+  .column #gallery-image{
+    width: 220px;
+    height: 220px;
+  }
+
+  #filters-title{
+    font-size:23px;
+  }
+
+  .checkbox label,
+  #numberOfColors{
+    font-size: 14px;
+  }
+
+   #saving-price{
+    font-size: 13px;
+   }
+
+  #logo-size{
+    width: 34px;
+    height: 12.75px;
+  }
+
+  #product-title,
+  #new-price,
+  #old-price,
+  .panel-group .panel-heading a{
+    font-size: 15px;
+  }
+
+  .custom-select{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .styled-select{
+    margin-left: 56%;
+  }
+
+  #products-title{
+    font-size: 23px;
+    margin-left: -0.2%;
+  }
+
+  #nike-cancel, #sleeve-cancel, #lleeve-cancel,
+  #clearbutton{
+    font-size: 14px;
+  }
+
+}
+
+
+/*------------END OF 5. Media for SCREEN and MIN-WIDTH 1200px --------------*/
+
+
+/*------------ 6. Media for SCREEN and MIN-WIDTH 1400px --------------*/
+
+@media screen and (min-width: 1400px) {
+  #headerL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #headerXL,
+  #headerS,
+  #headerTablet,
+  #headerLaptop {
+    display: none;
+  }
+  #footerL {
+    width: 100%;
+     height: 100%; 
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    position: relative;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+
+  .product-logo{
+    margin-right: -35%;
+  }
+
+  .productTitle{
+    width: 98%;
+  }
+
+  .products-content:hover{
+    width: 265px;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -85.1%;
+     width: 22.7%;
+  }
+
+  .gallery-item{
+    width: 240px;
+    height: 240px;
+  }
+  
+  .column #gallery-image{
+    width: 240px;
+    height: 240px;
+  }
+
+  .cancel-buttons{
+    margin-top: -3.1%;
+    margin-bottom: 0.7%;
+  }
+
+  .row{
+    margin-left: -31px;
+  }
+
+  .carousel-row{
+    margin-right: -98px;
+  }
+
+  #img-responsive{
+    width: 60px;
+    height: 60px;
+  }
+
+  #filters-title{
+    font-size:24px;
+  }
+
+  .checkbox label,
+  #numberOfColors{
+    font-size: 15px;
+  }
+
+   #saving-price{
+    font-size: 14px;
+   }
+
+  #logo-size{
+    width: 34px;
+    height: 12.75px;
+  }
+
+  #product-title,
+  #new-price,
+  #old-price,
+  .panel-group .panel-heading a{
+    font-size: 16px;
+  }
+
+  .custom-select{
+    width: 170px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .styled-select{
+    margin-left: 56%;
+  }
+
+  #products-title{
+    font-size: 24px;
+    margin-left: -0.2%;
+  }
+
+  #nike-cancel, #sleeve-cancel, #lleeve-cancel,
+  #clearbutton{
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+  #headerL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #headerXL,
+  #headerS,
+  #headerTablet,
+  #headerLaptop {
+    display: none;
+  }
+  #footerL {
+    width: 100%;
+     height: 100%; 
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    position: relative;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerXL {
+    display: none;
+  }
+
+.product-logo{
+    margin-right: -30%;
+  }
+
+  .productTitle{
+    width: 92%;
+  }
+
+  .gallery-item{
+    width: 240px;
+    height: 240px;
+  }
+  
+  .column #gallery-image{
+    width: 240px;
+    height: 240px;
+  }
+
+  .row{
+    margin-left: -31px;
+  }
+}
+
+
+
+/*------------END OF 6. Media for SCREEN and MIN-WIDTH 1400px --------------*/
+
+
+/*------------ 7. Media for SCREEN and MIN-WIDTH 1600px --------------*/
+
+@media screen and (min-width: 1600px) {
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  .product-logo{
+    margin-right: -28%;
+  }
+
+  .productTitle{
+    width: 89%;
+  }
+
+  .gallery-item{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .column #gallery-image{
+    width: 250px;
+    height: 250px;
+  }
+
+  .row{
+    margin-left: -31px;
+  }
+
+  .products-content:hover{
+    width: 275px;
+    margin-top: -0.9%;
+    margin-left: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -85.1%;
+     width: 22.7%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  .product-logo{
+    margin-right: -25%;
+  }
+
+  .productTitle{
+    width: 85%;
+  }
+
+  .gallery-item{
+    width: 260px;
+    height: 260px;
+  }
+  
+  .column #gallery-image{
+    width: 260px;
+    height: 260px;
+  }
+
+  .row{
+    margin-left: -31px;
+  }
+
+  .products-content:hover{
+    width: 285px;
+    margin-top: -0.8%;
+    margin-left: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -85.5%;
+     width: 22.7%;
+  }
+
+}
+
+@media screen and (min-width: 1800px) {
+
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  .product-logo{
+    margin-right: -25%;
+  }
+
+  .productTitle{
+    width: 85%;
+  }
+
+  .gallery-item{
+    width: 270px;
+    height: 270px;
+  }
+  
+  .column #gallery-image{
+    width: 270px;
+    height: 270px;
+  }
+
+  .row{
+    margin-left: -31px;
+  }
+
+  .products-content:hover{
+    width: 295px;
+    margin-top: -0.8%;
+    margin-left: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+     position: absolute;
+     margin-top: -85.7%;
+     width: 22.7%;
+  }
+
+}
+
+/*------------ 8. Media for SCREEN and MIN-WIDTH 1900px --------------*/
+
+@media screen and (min-width: 1900px) {
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+    position: relative;
+  }
+  #headerL {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+     height: 100%; 
+     position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerL {
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 15px;
+  }
+
+  .product-logo{
+    margin-right: -26%;
+  }
+
+  .productTitle{
+    width: 86%;
+  }
+
+  .gallery-item{
+    width: 290px;
+    height: 290px;
+  }
+  
+  .column #gallery-image{
+    width: 290px;
+    height: 290px;
+  }
+
+  .row{
+    margin-left: -38px;
+  }
+
+  .cancel-buttons{
+    margin-top: -4.1%;
+    margin-bottom: 0.7%;
+  }
+
+  .custom-select{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .styled-select{
+    margin-left: 55%;
+  }
+
+  .products-content:hover{
+    width: 315px;
+    margin-left: -0.6%;
+    margin-top: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+    width: 21.3%;
+    margin-top: -87%;
+  }
+
+  #discount-tag{
+    font-size: 18px;
+    width: 23%;
+  }
+
+  #filters-title{
+    font-size:26px;
+  }
+
+  .checkbox label,
+  #numberOfColors,
+  #saving-price{
+    font-size: 15px;
+  }
+
+  #logo-size{
+    width: 34px;
+    height: 12.75px;
+  }
+
+  #product-title,
+  #new-price,
+  #old-price,
+  .panel-group .panel-heading a{
+    font-size: 18px;
+  }
+
+  #products-title{
+    font-size: 26px;
+    margin-left: -0.2%;
+  }
+
+  #nike-cancel, #sleeve-cancel, #lleeve-cancel{
+    font-size: 15px;
+  }
+
+  .carousel-row{
+    margin-right: -119px;
+    margin-left: -20px;
+  }
+
+  #img-responsive{
+    width: 70px;
+    height: 70px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next{
+    margin-bottom: 4%;
+    margin-left: -8%;
+    font-size: 21px;
+  }
+
+  .price-wrap #one, .price-wrap #two{
+    margin-right: 31px;
+  }
+
+}
+
+@media screen and (min-width: 2000px) {
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  #nav-text{
+    font-size: 17px;
+  }
+
+  .product-logo{
+    margin-right: -27%;
+  }
+
+  .productTitle{
+    width: 87%;
+  }
+
+  .gallery-item{
+    width: 320px;
+    height: 320px;
+  }
+  
+  .column #gallery-image{
+    width: 320px;
+    height: 320px;
+  }
+
+  .row{
+    margin-left: -39px;
+  }
+
+  .styled-select{
+    margin-left: 59%;
+  }
+
+  .products-content:hover{
+    width: 350px;
+    margin-left: -0.6%;
+    margin-top: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+    width: 21.2%;
+    margin-top: -86%;
+  }
+
+  #discount-tag{
+    font-size: 20px;
+    width: 23%;
+  }
+
+
+}
+
+@media screen and (min-width: 2200px) {
+
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  .gallery-item{
+    width: 350px;
+    height: 350px;
+  }
+  
+  .column #gallery-image{
+    width: 350px;
+    height: 350px;
+  }
+
+  .row{
+    margin-left: -42px;
+  }
+
+  .styled-select{
+    margin-left: 62%;
+  }
+
+  .products-content:hover{
+    width: 375px;
+    margin-left: -0.5%;
+    margin-top: -0.7%;
+  }
+
+  .products-content:hover #discount-tag{
+    width: 21.2%;
+    margin-top: -87%;
+  }
+
+}
+
+@media screen and (min-width: 2400px) {
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+
+  .gallery-item{
+    width: 400px;
+    height: 400px;
+  }
+  
+  .column #gallery-image{
+    width: 400px;
+    height: 400px;
+  }
+
+  .row{
+    margin-left: -46px;
+  }
+
+  .styled-select{
+    margin-left: 67%;
+  }
+
+  .product-logo{
+    margin-right: -33%;
+  }
+
+  .productTitle{
+    width: 91%;
+  }
+  #filters-title{
+    font-size:30px;
+  }
+
+  .checkbox label,
+  #numberOfColors,
+  #saving-price{
+    font-size: 22px;
+  }
+
+  #logo-size{
+    width: 34px;
+    height: 12.75px;
+  }
+
+  #product-title,
+  #new-price,
+  #old-price,
+  .panel-group .panel-heading a{
+    font-size: 25px;
+  }
+
+  #products-title{
+    font-size: 33px;
+    margin-left: -0.2%;
+  }
+
+  #nike-cancel, #sleeve-cancel, #lleeve-cancel{
+    font-size: 22px;
+  }
+
+  .carousel-row{
+    margin-right: -119px;
+    margin-left: -20px;
+  }
+
+  #img-responsive{
+    width: 70px;
+    height: 70px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next{
+    margin-bottom: 4%;
+    margin-left: -8%;
+    font-size: 28px;
+  }
+
+  .price-wrap #one, .price-wrap #two{
+    margin-right: 38px;
+  }
+
+  .products-content:hover{
+    width: 425px;
+    margin-left: -0.5%;
+    margin-top: -0.6%;
+  }
+
+  .products-content:hover #discount-tag{
+    width: 21.6%;
+    margin-top: -88%;
+  }
+
+  #discount-tag{
+    position: relative;
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (min-width: 2560px) {
+  #headerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL,
+  #headerS,
+  #headerTablet {
+    display: none;
+  }
+  #footerXL {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+  }
+  #footerS,
+  #footerTablet,
+  #footerLaptop,
+  #footerL {
+    display: none;
+  }
+  
+  .gallery-item{
+    width: 400px;
+    height: 400px;
+  }
+  
+  .column #gallery-image{
+    width: 400px;
+    height: 400px;
+  }
+
+  .row{
+    margin-left: -46px;
+  }
+
+  .styled-select{
+    margin-left: 67%;
+  }
+
+  .product-logo{
+    margin-right: -30%;
+  }
+
+  .productTitle{
+    width: 88%;
+  }
+
+  .products-content:hover{
+    width: 430px;
+    margin-left: -0.5%;
+    margin-top: 
+  }
+}
+
+
+
+/*------------ 8. Media for SCREEN and MIN-WIDTH 1900px -------------- */
+

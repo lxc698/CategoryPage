@@ -1,0 +1,159 @@
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-height : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  #headerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerLaptop,
+  #headerTablet {
+    display: none;
+  }
+  #footerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
+  .products-left-side{
+    margin-top: -18%;
+    margin-left: -23%;
+  }
+
+  #filters-logo-collapse{
+    margin-left: 0.3%;
+    width: 220px;
+  }
+
+  .products-right-side{
+    margin-right: 26%;
+    margin-top: -13.1%;
+  }
+
+  .custom-select{
+    width: 220px;
+  }
+
+  .brand, .type, .style, .size, .price, .colours{
+    width: 86%;
+  }
+
+  .row{
+    margin-right: -8px;
+    margin-left: -61.7px;
+  }
+
+  .gallery-item,
+  .column #gallery-image{
+    width: 240px;
+    height: 240px;  
+  }
+
+}
+
+/* iPhone 6,7,8 plus ----------- */
+@media only screen and (min-device-width : 414px) and (max-device-height : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  #headerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #headerL, 
+  #headerXL,
+  #headerLaptop,
+  #headerTablet {
+    display: none;
+  }
+  #footerS {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 0%;
+    display: inline-flex;
+    margin-left: 0%;
+    
+  }
+  #footerXL,
+  #footerL,
+  #footerTablet,
+  #footerLaptop {
+    display: none;
+  }
+  .products-left-side{
+    margin-top: -12%;
+    margin-left: -22.7%;
+  }
+
+  #filters-logo-collapse{
+    margin-left: 0.3%;
+    width: 338px;
+    margin-top: 6%;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_right_48px-128.png) 96% / 10% no-repeat;
+  }
+
+  .products-right-side{
+    margin-right: 26%;
+    margin-top: -8.5%;
+  }
+
+  .custom-select{
+    width: 340px;
+    background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) 96% / 10% no-repeat;
+
+  } 
+
+  .cancel-buttons{
+    margin-left: -30%;
+    margin-top: -3.5%;
+  }
+
+  .brand, .type, .style, .size, .price, .colours{
+    width: 86%;
+  }
+
+  .row{
+    margin-right: -8px;
+    margin-left: -92.7px;
+  }
+
+  .gallery-item,
+  .column #gallery-image{
+    width: 374px;
+    height: 374px;  
+  }
+}
+
+
+/*----------- SAMSUNG GALAXY S5----------*/
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  #filters-logo-collapse{
+    margin-left: 1%;
+  }
+
+  .products-right-side{
+    margin-top: -17.5%;
+  }
+}
+
+
+
+

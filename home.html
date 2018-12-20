@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Category Page</title>
+    <!--------------- 1. CSS LINKS ---------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/mobileLandscape.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="dfk-header">
+      <div id="headerS">
+        <img src="images/headerS.png" id="headerS">
+      </div>
+      <div id="headerTablet">
+        <img src="images/headerTablet.png" id="headerTablet">
+      </div>
+      <div id="headerLaptop">
+        <img src="images/headerLaptop.png" id="headerLaptop">
+      </div>
+      <div id="headerL">
+        <img src="images/headerL.png" id="headerL">
+      </div>
+      <div id="headerXL">
+        <img src="images/headerXL.png" id="headerXL">
+      </div>
+    </div>
+    <main>
+      <div id="mobile-overlay" class="overlay"></div>
+      <div id="mobile-filters" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="brand">
+            <h3 id="brand-text">BRAND</h3>
+            <div class="checkbox">
+              <input type="checkbox" id="nike-mobilecheckbox" checked">
+              <label for="nike-mobilecheckbox">Nike</label>
+              <input type="checkbox" id="adidas-mobilecheckbox">
+              <label for="adidas-mobilecheckbox">adidas</label>
+              <input type="checkbox" id="prostar-mobilecheckbox">
+              <label for="prostar-mobilecheckbox">Prostar</label>
+              <input type="checkbox" id="stanno-mobilecheckbox">
+              <label for="stanno-mobilecheckbox">Stanno</label>
+              <input type="checkbox" id="mitre-mobilecheckbox">
+              <label for="mitre-mobilecheckbox">Mitre</label>
+            </div>
+          </div>
+          <div class="type">
+            <h3 id="type-text">TYPE</h3>
+            <div class="checkbox">
+              <input type="checkbox" id="matchwear-vcheckbox">
+              <label for="matchwear-mobilecheckbox">Matchwear</label>
+              <input type="checkbox" id="jerseys-mobilecheckbox">
+              <label for="jerseys-mobilecheckbox">Jerseys</label>
+              <input type="checkbox" id="tracksuits-mobilecheckbox">
+              <label for="tracksuits-mobilecheckbox">Tracksuits</label>
+            </div>
+          </div>
+
+          <div class="style">
+            <h3 id="style-text">STYLE</h3>
+            <div class="checkbox">
+              <input type="checkbox" id="sleeve-mobilecheckbox" checked>
+              <label for="sleeve-mobilecheckbox">Short Sleeve</label>
+              <input type="checkbox" id="lleeve-mobilecheckbox">
+              <label for="lleeve-mobilecheckbox">Long Sleeve</label>
+            </div>
+          </div>
+
+          <div class="size">
+            <h3 id="size-text">SIZE</h3>
+            <div class="youths">
+              <h1 id="youth-size">YOUTHS</h1>
+              <div class="size-buttons">
+                <button id="size-button">XS</button>
+                <button id="size-button">S</button>
+                <button id="size-button">M</button>
+                <button id="size-button">L</button>
+                <button id="size-button">XL</button>
+              </div>
+            </div>
+            <div class="mens">
+              <h1 id="men-size">MENS</h1>
+              <div class="size-buttons">
+                <button id="size-button">S</button>
+                <button id="size-button">M</button>
+                <button id="size-button" style="color: white; background-color: black; border: 1px solid black;">L</button>
+                <button id="size-button">XL</button>
+                <button id="size-button">XXL</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="price">
+            <h3 id="price-text">PRICE</h3>
+              <fieldset class="filter-price2">
+                <div class="price-field2">
+                  <input type="range"  min="0" max="99" value="0" id="lower2">
+                  <input type="range" min="0" max="99" value="99" id="upper2">
+                </div>
+                <div class="price-wrap2">
+                  <div class="price-wrap-1-2">
+                    <label for="one2">£</label>
+                    <input id="one2" type="text" readonly="">
+                  </div>
+                  <div class="price-wrap-2-2">
+                    <label for="two2">£</label>
+                    <input id="two2" type="text" readonly="">
+                  </div>
+                </div>
+              </fieldset>
+          </div>
+
+          <div class="colours">
+            <h3 id="colour-text">COLOUR</h3>
+            <div class="colours-menu">
+              <ul class="color-row1">
+                <li class="color-circle" style="background:#000"></li>
+                <li class="color-circle" style="background:#ff0b0b"></li>
+                <li class="color-circle" style="background:#fff; border: 1px solid #ccc;"></li>
+                <li class="color-circle" style="background:#0b12ff"></li>
+                <li class="color-circle" style="background:#6c6c6c"></li>
+                <li class="color-circle" style="background:#33c803"></li>
+                <li class="color-circle" style="background:#9d00ff"></li>
+                <li class="color-circle" style="background:#ffec00"></li>
+                <li class="color-circle" style="background:#ffa500"></li>
+                <li class="color-circle" style="background:#00ffb9"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="clearfilters">Clear</button>
+            <button id="applyfilters">Apply</button>
+          </div>
+      </div>
+      <div id="msform">
+        <!--------------------- CONTENT ----------------------->
+        <div class="top-navigation">
+          <h1 id="nav-text">Home / Football Kits / Nike Football Kits / Nike Football Shirts</h1>
+        </div>
+        <div class="filters">
+          <h1 id="filters-logo-collapse" onclick="openNav()">FILTERS</h1>
+          <h1 id="filters-title"><span class="fa fa-sliders-h"></span> &nbsp;FILTERS</h1>
+          <div class="filters-collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">BRAND</a>
+                  </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                    <div class="checkbox">
+                      <input type="checkbox" id="nike-checkbox" checked onclick="nikeCheckbox()">
+                      <label for="nike-checkbox">Nike</label>
+                      <input type="checkbox" id="adidas-checkbox" onclick="adidasCheckbox()">
+                      <label for="adidas-checkbox">adidas</label>
+                      <input type="checkbox" id="prostar-checkbox" onclick="prostarCheckbox()">
+                      <label for="prostar-checkbox">Prostar</label>
+                      <input type="checkbox" id="stanno-checkbox" onclick="stannoCheckbox()">
+                      <label for="stanno-checkbox">Stanno</label>
+                      <input type="checkbox" id="mitre-checkbox" onclick="mitreCheckbox()">
+                      <label for="mitre-checkbox">Mitre</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">TYPE</a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    <div class="checkbox"> 
+                      <input type="checkbox" id="matchwear-checkbox" onclick="matchwearCheckbox()">
+                      <label for="matchwear-checkbox">Matchwear</label>
+                      <input type="checkbox" id="jerseys-checkbox" onclick="jerseysCheckbox()">
+                      <label for="jerseys-checkbox">Jerseys</label>
+                      <input type="checkbox" id="tracksuits-checkbox" onclick="tracksuitsCheckbox()">
+                      <label for="tracksuits-checkbox">Tracksuits</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">STYLE</a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                    <div class="checkbox">
+                      <input type="checkbox" id="sleeve-checkbox" checked onclick="sleeveCheckbox()">
+                      <label for="sleeve-checkbox">Short Sleeve</label>
+                      <input type="checkbox" id="lleeve-checkbox" onclick="lleeveCheckbox()">
+                      <label for="lleeve-checkbox">Long Sleeve</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">SIZE</a>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                    <div class="youths">
+                      <h1 id="youth-size">YOUTHS</h1>
+                      <div class="size-buttons">
+                        <button id="size-button">XS</button>
+                        <button id="size-button">S</button>
+                        <button id="size-button">M</button>
+                        <button id="size-button">L</button>
+                        <button id="size-button">XL</button>
+                      </div>
+                    </div>
+                    <div class="mens">
+                      <h1 id="men-size">MENS</h1>
+                      <div class="size-buttons">
+                        <button id="size-button">S</button>
+                        <button id="size-button">M</button>
+                        <button id="size-button" style="color: white; background-color: black; border: 1px solid black;">L</button>
+                        <button id="size-button">XL</button>
+                        <button id="size-button">XXL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFive">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">PRICE</a>
+                  </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                  <div class="panel-body">
+                    <fieldset class="filter-price">
+                      <div class="price-field">
+                        <input type="range"  min="0" max="99" value="0" id="lower">
+                        <input type="range" min="0" max="99" value="99" id="upper">
+                      </div>
+                      <div class="price-wrap">
+                        <div class="price-wrap-1">
+                          <label for="one">£</label>
+                          <input id="one" type="text" readonly="">
+                        </div>
+                        <div class="price-wrap-2">
+                          <label for="two">£</label>
+                          <input id="two" type="text" readonly="">
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                  <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion6" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">COLOUR</a>
+                  </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                  <div class="panel-body">
+                    <div class="colours-menu">
+                      <ul class="color-row1">
+                        <li class="color-circle" style="background:#000"></li>
+                        <li class="color-circle" style="background:#ff0b0b"></li>
+                        <li class="color-circle" style="background:#fff; border: 1px solid #ccc;"></li>
+                        <li class="color-circle" style="background:#0b12ff"></li>
+                        <li class="color-circle" style="background:#6c6c6c"></li>
+                        <li class="color-circle" style="background:#33c803"></li>
+                        <li class="color-circle" style="background:#9d00ff"></li>
+                        <li class="color-circle" style="background:#ffec00"></li>
+                        <li class="color-circle" style="background:#ffa500"></li>
+                        <li class="color-circle" style="background:#00ffb9"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="products-left-side">
+            <h1 id="products-title">NIKE FOOTBALL SHIRTS</h1><h4 id="products-number">(12)</h4>
+          </div>
+          <div class="products-right-side">
+            <div class="styled-select">
+              <select required class="custom-select">
+                <option value="" hidden>SORT BY:</option>
+                <option value="0">PRICE LOW-HIGH</option>
+                <option value="1">PRICE HIGH-LOW</option>
+                <option value="2">NEWEST</option>
+                <option value="1">TOP SELLERS</option>
+              </select>
+            </div>
+          </div>
+          <div class="product-box">
+            <div class="cancel-buttons">
+              <button id="nike-cancel" onclick="javascript:nikeCheckbox();"><span class="fa fa-times"></span>&nbsp;Nike</button>
+              <button id="adidas-cancel"><span class="fa fa-times"></span>&nbsp;adidas</button>
+              <button id="stanno-cancel"><span class="fa fa-times"></span>&nbsp;Stanno</button>
+              <button id="prostar-cancel"><span class="fa fa-times"></span>&nbsp;Prostar</button>
+              <button id="mitre-cancel"><span class="fa fa-times"></span>&nbsp;Mitre</button>
+              <button id="matchwear-cancel"><span class="fa fa-times"></span>&nbsp;Matchwear</button>
+              <button id="jerseys-cancel"><span class="fa fa-times"></span>&nbsp;Jerseys</button>
+              <button id="tracksuits-cancel"><span class="fa fa-times"></span>&nbsp;Tracksuits</button>
+              <button id="sleeve-cancel"><span class="fa fa-times"></span>&nbsp;Short Sleeve</button>
+              <button id="lleeve-cancel"><span class="fa fa-times"></span>&nbsp;Long Sleeve</button>
+              <button id="clearbutton">Clear All</button>
+            </div>
+            <div class="gallery row clearfix">
+              <div class="row">
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product1.png" id="gallery-image" class="main"></a>
+                      <h2 id="discount-tag">-60 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product1.png" id="img-responsive">
+                                  </div> 
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK VI SHORT SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£4.38</h1>
+                        <h1 id="old-price">£10.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £6.57)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product2.png" id="gallery-image" class="main2"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel2" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail2" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel2" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel2" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK VI LONG SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£9.21</h1>
+                        <h1 id="old-price">£11.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £2.74)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product3.png" id="gallery-image" class="main3"></a>
+                      <h2 id="discount-tag">-30 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel3" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail3" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel3" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel3" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE TIEMPO PREMIER SS FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£9.07</h1>
+                        <h1 id="old-price">£12.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £3.88)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product4.png" id="gallery-image" class="main4"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel4" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail4" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel4" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel4" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE TIEMPO PREMIER LS FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£11.95</h1>
+                        <h1 id="old-price">£14.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £2.99)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product5.png" id="gallery-image" class="main5"></a>
+                      <h2 id="discount-tag">-26 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel5" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail5" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel5" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel5" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK DERBY II SS FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£10.33</h1>
+                        <h1 id="old-price">£13.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £3.62)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product6.png" id="gallery-image" class="main6"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel6" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail6" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel6" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel6" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK DERBY II LS FOOTBALL SHIRT</h1>
+                      </div>
+                      
+                      <div id="product-price">
+                        <h1 id="new-price">£12.75</h1>
+                        <h1 id="old-price">£15.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £3.19)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product7.png" id="gallery-image" class="main7"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel7" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail7" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel7" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel7" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK DERBY SHORT SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      
+                      <div id="product-price">
+                        <h1 id="new-price">£10.88</h1>
+                        <h1 id="old-price">£12.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £2.07)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product8.png" id="gallery-image" class="main8"></a>
+                      <h2 id="discount-tag">-50 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel8" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail8" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel8" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel8" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK VI SHORT SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£8.49</h1>
+                        <h1 id="old-price">£16.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £8.50)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product9.png" id="gallery-image" class="main9"></a>
+                      <h2 id="discount-tag">-30 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel9" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail9" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel9" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel9" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE TROPHY III SHORT SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£9.07</h1>
+                        <h1 id="old-price">£12.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £3.88)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product10.png" id="gallery-image" class="main10"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel10" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail10" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel10" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel10" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE TROPHY III LONG SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      <div id="product-price">
+                        <h1 id="new-price">£10.96</h1>
+                        <h1 id="old-price">£13.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £2.99)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product11.png" id="gallery-image" class="main11"></a>
+                      <h2 id="discount-tag">-55 %</h2>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel11" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail11" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel11" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel11" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE STRIPED DIVISION III SS FOOTBALL SHIRT</h1>
+                      </div>
+                      
+                      <div id="product-price">
+                        <h1 id="new-price">£7.63</h1>
+                        <h1 id="old-price">£16.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £9.32)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="products-content">
+                    <div class="gallery-item">
+                      <a href="#"><img src="images/product12.png" id="gallery-image" class="main12"></a>
+                    </div>
+                    <div class="image-carousel">
+                      <div class="carousel-row">
+                          <div id="recipeCarousel12" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product1.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product2.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product3.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product4.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product5.png" id="img-responsive">
+                                  </div>
+                                  <div class="carousel-item">
+                                      <img class="d-block col-4 img-fluid thumbnail12" src="images/product6.png" id="img-responsive">
+                                  </div>
+                              </div>
+                              <a class="carousel-control-prev" href="#recipeCarousel12" role="button" data-slide="prev">
+                                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#recipeCarousel12" role="button" data-slide="next">
+                                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="image-description">
+                      <div class="colors-and-logo">
+                        <h1 id="numberOfColors">8 Colours</h1>
+                        <div class="product-logo">
+                          <img src="images/nike.png" id="logo-size">
+                        </div>
+                      </div>
+                      <div class="productTitle">
+                        <h1 id="product-title">NIKE PARK VI SHORT SLEEVE FOOTBALL SHIRT</h1>
+                      </div>
+                      
+                      <div id="product-price">
+                        <h1 id="new-price">£8.21</h1>
+                        <h1 id="old-price">£10.95</h1>
+                      </div>
+                      <div id="saving">
+                        <h1 id="saving-price">(save £2.74)</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="dfk-footer">
+      <div id="footerS">
+        <img src="images/footerS.png" id="footerS">
+      </div>
+      <div id="footerTablet">
+        <img src="images/footerTablet.png" id="footerTablet">
+      </div>
+      <div id="footerLaptop">
+        <img src="images/footerLaptop.png" id="footerLaptop">
+      </div>
+      <div id="footerL">
+        <img src="images/footer.png" id="footerL">
+      </div>
+      <div id="footerXL">
+        <img src="images/footerXL.png" id="footerXL">
+      </div>
+    </div>
+    <script type="text/javascript">
+      function openNav() {
+        // $('html, body').css({
+        //     overflow: 'hidden',
+        //     height: '100%',
+        //     width: '100%',
+        //     position: 'fixed'
+        // });
+        $('body, html').css({'overflow':'hidden', 'min-height':'100%', 'max-height':'100%', 'position':'fixed', 'touch-action': 'auto'});
+        $(document).bind('scroll',function () { 
+             window.scrollTo(0,0); 
+        });
+
+        document.getElementById("mobile-overlay").style.width = "100%";
+        document.getElementById("mobile-overlay").style.height = "100%";
+        document.getElementById("mobile-filters").style.width = "85%";
+        // document.getElementById("mobile-filters").style.position = "fixed";
+      }
+
+      function closeNav() {
+        // $('html, body').css({
+        //     overflow: 'auto',
+        //     height: 'auto'
+        // });
+        $(document).unbind('scroll'); 
+        $('body, html').css({'overflow':'visible', 'position':'unset'});
+        document.getElementById("mobile-overlay").style.width = "0";
+        document.getElementById("mobile-filters").style.width = "0";
+      }
+    </script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <script type="text/javascript" src="js/priceTag.js"></script>
+    <script type="text/javascript" src="js/priceTagMobile.js"></script>
+    <script type="text/javascript" src="js/thumbnailsHover.js"></script>
+    <script type="text/javascript" src="js/filters.js"></script>
+  </body>
+</html>
