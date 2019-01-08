@@ -1,3 +1,5 @@
+// PRICE TAG FROM THE FILTERS - THIS IS FOR THE MOBILE
+
 // -------------- MOBILE VERSION ----------------
 
 var lowerSlider2 = document.querySelector('#lower2');

@@ -1,3 +1,5 @@
+// This is for applying the filters and show them under the NIKE TSHIRT TITLE
+
 function nikeCheckbox() {
   var checkBox = document.getElementById("nike-checkbox");
   var text = document.getElementById("nike-cancel");

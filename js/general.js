@@ -1,3 +1,5 @@
+// CAROUSEL INTERVAL OF CHANGING
+
 $('#recipeCarousel').carousel({
   interval: 0
 })

@@ -1,3 +1,10 @@
+/*
+
+This is imported right from the bootstrap.css last version because you would need to know what I have changed.
+So please look into this file because I used it to the carousel and to the collapsing filters
+
+ */
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -9,7 +16,6 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit
 }
-
 
 .col,
 .col-1,
@@ -93,11 +99,7 @@ html {
   }
 }
 
-@supports ((-webkit-transform:translate3d(0,
-0,
-0)) or (transform:translate3d(0,
-0,
-0))) {
+@supports ((-webkit-transform:translate3d(0, 0, 0)) or (transform:translate3d(0, 0, 0))) {
   .carousel-item {
     -webkit-transition: -webkit-transform .4s ease-in-out;
     transition: -webkit-transform .4s ease-in-out;
@@ -144,11 +146,7 @@ html {
   }
 }
 
-@supports ((-webkit-transform:translate3d(0,
-0,
-0)) or (transform:translate3d(0,
-0,
-0))) {
+@supports ((-webkit-transform:translate3d(0, 0, 0)) or (transform:translate3d(0, 0, 0))) {
   .carousel-item-next.carousel-item-left,
   .carousel-item-prev.carousel-item-right {
     -webkit-transform: translate3d(0, 0, 0);
@@ -159,7 +157,6 @@ html {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0)
   }
-
   .active.carousel-item-left,
   .carousel-item-prev {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -169,6 +166,7 @@ html {
 
 
 /*------------ ACCORDION -------------*/
+
 .row {
   margin-right: -3px;
   margin-left: -28px
@@ -179,26 +177,28 @@ html {
   margin-left: -15px
 }
 
+
 /*----------- ACCORDION -------------*/
 
-.collapse{
-    display:none;
-}
-.collapse.show{
-    display:block;
+.collapse {
+  display: none;
 }
 
-.collapsing{
-    position:relative;
-    height:0;
-    overflow:hidden;
-    -webkit-transition-timing-function:ease;
-    -o-transition-timing-function:ease;
-    transition-timing-function:ease;
-    -webkit-transition-duration:.35s;
-    -o-transition-duration:.35s;
-    transition-duration:.35s;
-    -webkit-transition-property:height,visibility;
-    -o-transition-property:height,visibility;
-    transition-property:height,visibility
+.collapse.show {
+  display: block;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: .35s;
+  -o-transition-duration: .35s;
+  transition-duration: .35s;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility
 }

@@ -1,3 +1,5 @@
+// PRICE TAG FROM THE FILTERS - THIS IS FOR THE DESKTOP VERSION
+
 // ------------ DESKTOP----------------
 var lowerSlider = document.querySelector('#lower');
 var  upperSlider = document.querySelector('#upper');

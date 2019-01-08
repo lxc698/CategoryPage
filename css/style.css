@@ -1,4 +1,20 @@
-/*-------------- CSS GENERAL STYLE --------------*/
+/*
+
+CSS GENERAL STYLE
+
+TABLE OF CONTENTS
+
+1. GENERAL STYLE
+2. GALLERY STYLE
+2. HEADER AND FOOTER 
+3. TOP NAVIGATION
+4. FILTERS - LEFT PANEL
+5. RIGHT PANEL - PRODUCTS
+
+*/
+
+
+/*--------------- 1. GENERAL STYLE -----------*/
 
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
@@ -54,8 +70,18 @@ label {
   margin-bottom: 0.3125rem;
 }
 
+#msform {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
 
-/*--------------- GALLERY STYLE -----------*/
+
+/*--------------- END OF 1. GENERAL STYLE -----------*/
+
+
+/*--------------- 2. HEADER AND FOOTER -----------*/
+
 
 /*.dfk-header {
   width: 100%;
@@ -66,6 +92,7 @@ label {
   margin-bottom: -29px;
 }
 */
+
 #headerS,
 #headerXL,
 #headerTablet,
@@ -73,6 +100,7 @@ label {
 #headerL {
   display: none;
 }
+
 
 /*.dfk-footer {
   width: 100%;
@@ -83,6 +111,7 @@ label {
   margin-top: -25px;
 }
 */
+
 #footerS,
 #footerTablet,
 #footerLaptop,
@@ -91,48 +120,50 @@ label {
   display: none;
 }
 
-#msform {
-  width: 100%;
-  margin: 20px auto;
-  position: relative;
-}
 
-/*------------ TOP NAVIGATION ------------*/
+/*--------------- END OF 2. HEADER AND FOOTER -----------*/
 
-.top-navigation{
+
+/*------------ 3. TOP NAVIGATION ------------*/
+
+.top-navigation {
   margin-bottom: 3%;
 }
 
-#nav-text{
+#nav-text {
   font-size: 13px;
   font-weight: 520;
 }
 
-/*------------ FILTERS - LEFT PANEL --------------*/
 
-.filters{
+/*------------ END OF 3. TOP NAVIGATION ------------*/
+
+
+/*------------ 4. FILTERS - LEFT PANEL --------------*/
+
+.filters {
   width: 19%;
   float: left;
 }
 
-.filters-logo-collapse{
+.filters-logo-collapse {
   display: none;
 }
 
-#filters-title{
+#filters-title {
   font-size: 21px;
   font-weight: 550;
   border-bottom: 0.9px solid #ccc;
   padding-bottom: 20px;
 }
 
-.filters-collapse{
+.filters-collapse {
   width: 100%;
 }
 
-.panel{
-    background-color:#fff;
-    border-bottom:0.9px solid #ccc;
+.panel {
+  background-color: #fff;
+  border-bottom: 0.9px solid #ccc;
 }
 
 .panel-group,
@@ -142,7 +173,7 @@ label {
 .panel-group .panel-title,
 .panel-group .panel-title a,
 .panel-group .panel-body,
-.panel-group .panel-group .panel-heading + .panel-collapse > .panel-body {
+.panel-group .panel-group .panel-heading+.panel-collapse>.panel-body {
   border-radius: 0px;
 }
 
@@ -167,134 +198,149 @@ label {
   content: '-';
   position: absolute;
   right: 10px;
-  top:16px;
+  top: 16px;
   font-family: "Trebuchet Ms", sans-serif;
-  font-size:16px;
+  font-size: 16px;
 }
+
 .panel-group .panel-heading a.collapsed:after {
   content: '+';
 }
+
 .panel-group .panel-collapse {
   margin-top: 0;
 }
+
 .panel-group .panel-body {
   background: #ffffff;
   padding-left: 0px;
 }
+
 .panel-group .panel {
   background-color: transparent;
 }
+
 .panel-group .panel-body p:last-child,
 .panel-group .panel-body ul:last-child,
 .panel-group .panel-body ol:last-child {
   margin-bottom: 0;
 }
 
+
 /*--------------- BRAND CONTENT --------------*/
 
-.checkbox{
+.checkbox {
   margin-left: 0%;
-  margin-top: 0%; 
+  margin-top: 0%;
   margin-bottom: 5%;
   display: inline-grid;
   padding: 1px;
 }
 
 .checkbox input[type="checkbox"] {
-    opacity: 0;
+  opacity: 0;
 }
 
 .checkbox label {
-    position: relative;
-    font-family: 'Arial', sans-serif;
-    padding-left: 23px;
-    color: #000;
-    padding-top: 6px;
-    font-size: 14px;
-    margin-top: -18%;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  padding-left: 23px;
+  color: #000;
+  padding-top: 6px;
+  font-size: 14px;
+  margin-top: -18%;
 }
 
 .checkbox label::before,
 .checkbox label::after {
-    position: absolute;
-    content: "";
-    color: black;
-    /*Needed for the line-height to take effect*/
-    display: inline-block;
+  position: absolute;
+  content: "";
+  color: black;
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
 }
+
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before{
-    height: 14px;
-    width: 14px;
-    color: #ccc;
-    border: 1px solid;
-    left: 0px;
-    
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+
+.checkbox label::before {
+  height: 14px;
+  width: 14px;
+  color: #ccc;
+  border: 1px solid;
+  left: 0px;
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
      *to vertically center it.
      */
-    top: 5px;
+  top: 5px;
 }
+
 
 /*Checkmark of the fake checkbox*/
+
 .checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    color: black;
-    transform: rotate(-45deg);
-    
-    left: 3px;
-    top: 7px;
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  color: black;
+  transform: rotate(-45deg);
+  left: 3px;
+  top: 7px;
 }
+
 
 /*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
-    content: none;
+
+.checkbox input[type="checkbox"]+label::after {
+  content: none;
 }
+
 
 /*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
+
+.checkbox input[type="checkbox"]:checked+label::after {
+  content: "";
 }
 
+
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
+
+.checkbox input[type="checkbox"]:focus+label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
+
 
 /*-------------- SIZE -----------------*/
 
 .youths,
-.mens{
+.mens {
   margin-bottom: 5%;
 }
 
 #youth-size,
-#men-size{
+#men-size {
   color: #888;
   font-size: 13px;
 }
 
-#size-button{
+#size-button {
   width: 30.5%;
-    background-color: transparent;
-    border: 1px solid #888;
-    padding: 9px;
-    margin-top: 3%;
-    color: #888;
-    margin-right: 1%;
+  background-color: transparent;
+  border: 1px solid #888;
+  padding: 9px;
+  margin-top: 3%;
+  color: #888;
+  margin-right: 1%;
 }
 
-#size-button:hover{
+#size-button:hover {
   background-color: black;
   color: white;
   transition: .1s ease-out;
   border: 1px solid black;
-  
 }
+
 
 /*------------- PRICe ------------------*/
 
@@ -303,7 +349,7 @@ label {
   width: 100%;
   border: 0;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .price-title {
@@ -328,15 +374,16 @@ label {
 
 .price-field input[type=range],
 .price-field2 input[type=range] {
-    position: absolute;
+  position: absolute;
 }
+
 
 /* Reset style for input range */
 
 .price-field input[type=range],
 .price-field2 input[type=range] {
   width: 98%;
-  height: 2px; 
+  height: 2px;
   border: 0;
   outline: 0;
   box-sizing: border-box;
@@ -347,7 +394,7 @@ label {
 
 .price-field input[type=range]::-webkit-slider-thumb,
 .price-field2 input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .price-field input[type=range]:active,
@@ -360,7 +407,7 @@ label {
 .price-field input[type=range]::-ms-track,
 .price-field2 input[type=range]::-ms-track {
   width: 98%;
-  height: 2px; 
+  height: 2px;
   border: 0;
   outline: 0;
   box-sizing: border-box;
@@ -372,30 +419,31 @@ label {
   border-radius: 5px;
 }
 
+
 /* Style toddler input range */
 
 .price-field input[type=range]::-webkit-slider-thumb,
-.price-field2 input[type=range]::-webkit-slider-thumb { 
+.price-field2 input[type=range]::-webkit-slider-thumb {
   /* WebKit/Blink */
-    position: relative;
-    -webkit-appearance: none;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    border-radius: 50%;
-    height: 23px;
-    width: 23px;
-    margin-top: -9px;
-    background-color: white;
-    border: 1px solid #888;
-    cursor: pointer;
-    cursor: pointer;
-    pointer-events: all;
-    z-index: 100;
+  position: relative;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 23px;
+  width: 23px;
+  margin-top: -9px;
+  background-color: white;
+  border: 1px solid #888;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
 }
 
 .price-field input[type=range]::-moz-range-thumb,
-.price-field2 input[type=range]::-moz-range-thumb  { 
+.price-field2 input[type=range]::-moz-range-thumb {
   /* Firefox */
   position: relative;
   appearance: none;
@@ -415,8 +463,7 @@ label {
 }
 
 .price-field input[type=range]::-ms-thumb,
-.price-field2 input[type=range]::-ms-thumb
-  { 
+.price-field2 input[type=range]::-ms-thumb {
   /* IE */
   position: relative;
   appearance: none;
@@ -435,10 +482,11 @@ label {
   z-index: 100;
 }
 
+
 /* Style track input range */
 
 .price-field input[type=range]::-webkit-slider-runnable-track,
-.price-field2 input[type=range]::-webkit-slider-runnable-track { 
+.price-field2 input[type=range]::-webkit-slider-runnable-track {
   /* WebKit/Blink */
   width: 98%;
   height: 2px;
@@ -448,7 +496,7 @@ label {
 }
 
 .price-field input[type=range]::-moz-range-track,
-.price-field2 input[type=range]::-moz-range-track { 
+.price-field2 input[type=range]::-moz-range-track {
   /* Firefox */
   width: 98%;
   height: 2px;
@@ -458,7 +506,7 @@ label {
 }
 
 .price-field input[type=range]::-ms-track,
-.price-field2 input[type=range]::-ms-track { 
+.price-field2 input[type=range]::-ms-track {
   /* IE */
   width: 98%;
   height: 2px;
@@ -466,6 +514,7 @@ label {
   background: #00a100;
   border-radius: 5px;
 }
+
 
 /* Style for input value block */
 
@@ -482,11 +531,12 @@ label {
 }
 
 .price-wrap-1,
-.price-wrap-1-2{
+.price-wrap-1-2 {
   float: left;
   display: flex;
   margin-left: 1%;
-} 
+}
+
 .price-wrap-2,
 .price-wrap-2-2 {
   display: flex;
@@ -498,11 +548,11 @@ label {
   margin-right: 5px;
 }
 
-.price-wrap #one, 
+.price-wrap #one,
 .price-wrap #two,
-.price-wrap2 #one2, 
+.price-wrap2 #one2,
 .price-wrap2 #two2 {
-    width: 30px;
+  width: 30px;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -521,8 +571,9 @@ label {
   text-align: left;
 }
 
+
 /* Style for active state input */
-    
+
 .price-field input[type=range]:hover::-webkit-slider-thumb,
 .price-field2 input[type=range]:hover::-webkit-slider-thumb {
   box-shadow: 0 0 0 0.5px #000;
@@ -538,79 +589,82 @@ label {
 
 /*----------- COLOURS -------------*/
 
-.colours-menu{
+.colours-menu {
   margin-bottom: 4%;
   width: 95%;
 }
 
-.color-row1{
+.color-row1 {
   width: 111%;
 }
 
 .color-circle {
   margin-top: 1%;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-    margin-bottom: 4%;
-    border-radius: 50px 50px 50px 50px; 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  margin-bottom: 4%;
+  border-radius: 50px 50px 50px 50px;
 }
 
-.color-circle:hover{
+.color-circle:hover {
   opacity: 0.5;
   transition: .5 ease;
 }
 
 .size-circle {
-    background-color: #EBEBEB;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px 50px 50px 50px;
-    text-align: center;
-    line-height: 30px;
+  background-color: #EBEBEB;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  line-height: 30px;
 }
 
 
-/*--------- RIGHT PANEL - PRODUCTS -------------*/
+/*------------ END OF 4. FILTERS - LEFT PANEL --------------*/
 
-.products{
+
+/*--------- 5. RIGHT PANEL - PRODUCTS -------------*/
+
+.products {
   width: 77%;
   float: right;
 }
 
-.products-left-side{
+.products-left-side {
   width: 50%;
   float: left;
 }
 
-.products-right-side{
+.products-right-side {
   width: 39%;
   float: right;
 }
 
-.product-box{
+.product-box {
   margin-top: 7%;
   margin-bottom: 10%;
   width: 100%;
 }
 
-#products-title{
+#products-title {
   font-size: 21px;
   display: inline-block;
   font-weight: 550;
   float: left;
 }
 
-#products-number{
+#products-number {
   display: inline-block;
   margin-top: 6px;
   font-size: 13px;
   margin-left: 1%;
 }
 
-.cancel-buttons{
+.cancel-buttons {
   margin-top: -2.5%;
   margin-bottom: 1%;
   width: 70%;
@@ -624,32 +678,30 @@ label {
 #tracksuits-cancel,
 #jerseys-cancel,
 #sleeve-cancel,
-#lleeve-cancel{
+#lleeve-cancel {
   display: none;
   background-color: transparent;
   padding-right: 10px;
 }
 
-
 #nike-cancel,
 #sleeve-cancel,
-#lleeve-cancel{
+#lleeve-cancel {
   display: inline-block;
   background-color: transparent;
   padding-right: 10px;
 }
 
-#clearbutton{
+#clearbutton {
   display: inline-block;
   background-color: transparent;
   padding-right: 10px;
   text-decoration: underline;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
-
 
 #nike-cancel:hover,
 #adidas-cancel:hover,
@@ -661,18 +713,17 @@ label {
 #jerseys-cancel:hover,
 #sleeve-cancel:hover,
 #lleeve-cancel:hover,
-#clearbutton:hover{
-
+#clearbutton:hover {
   color: #00a100;
   text-decoration: underline;
 }
 
-.styled-select{
+.styled-select {
   margin-left: 54%;
   margin-top: 0.5%;
 }
 
-.custom-select{
+.custom-select {
   width: 158px;
   height: 38px;
   border: 0.9px solid black;
@@ -721,28 +772,29 @@ label {
   margin-bottom: 6%;
 }
 
+
 /*------------ PRODUCT DESCRIPTION ------------*/
 
-.image-description{
+.image-description {
   width: 100%;
 }
 
-.colors-and-logo{
+.colors-and-logo {
   width: 100%;
 }
 
-.product-logo{
+.product-logo {
   width: 50%;
   float: right;
   /*margin-right: -34%;*/
 }
 
-#logo-size{
+#logo-size {
   width: 30px;
   height: 10.75px;
 }
 
-#numberOfColors{
+#numberOfColors {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   float: left;
@@ -750,51 +802,51 @@ label {
   margin-bottom: 4%;
 }
 
-.productTitle{
+.productTitle {
   width: 100%;
   border-top: 0.9px solid #ccc;
   padding-top: 4%;
   float: left;
 }
 
-#product-title{
+#product-title {
   font-size: 13px;
   margin-bottom: 5%;
 }
 
-#product-price{
+#product-price {
   display: inline-block;
   width: 100%;
   font-family: "Arial", sans-serif;
   margin-bottom: 0.5%;
 }
 
-#new-price{
+#new-price {
   font-size: 14px;
   color: red;
   display: inline-block;
 }
 
-#old-price{
+#old-price {
   font-size: 14px;
   color: black;
   display: inline-block;
-  margin-left:2.5%;
+  margin-left: 2.5%;
   text-decoration: line-through;
 }
 
-#saving-price{
+#saving-price {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   color: red;
   margin-bottom: 3%;
 }
 
-.products-content{
+.products-content {
   width: 125%;
 }
 
-.products-content:hover{
+.products-content:hover {
   position: absolute;
   background-color: white;
   border: 1px solid #d4d4d4;
@@ -807,7 +859,7 @@ label {
   margin-left: -1.1%;
 }
 
-#discount-tag{
+#discount-tag {
   position: absolute;
   font-size: 15px;
   margin-top: -16%;
@@ -815,20 +867,20 @@ label {
   padding: 4px 7px 4px 7px;
 }
 
-.products-content:hover #discount-tag{
-    margin-top: -81.8%;
+.products-content:hover #discount-tag {
+  margin-top: -81.8%;
 }
 
-.products-content:hover .colors-and-logo{
+.products-content:hover .colors-and-logo {
   display: none;
 }
 
-.products-content:hover .image-carousel{
+.products-content:hover .image-carousel {
   display: block;
 }
 
-.products-content:hover .productTitle{
-    width: 93%;
+.products-content:hover .productTitle {
+  width: 93%;
 }
 
 .item-container {
@@ -843,20 +895,19 @@ label {
   border-bottom: 1px solid #ccc;
 }
 
-
-#img-responsive{
-    width: 60px;
-    height: 50px;
+#img-responsive {
+  width: 60px;
+  height: 50px;
 }
 
-.image-carousel{
+.image-carousel {
   display: none;
   width: 34%;
   margin-left: 14%;
   margin-bottom: 5%;
 }
 
-.col-4{
+.col-4 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -897,14 +948,12 @@ label {
 
 /*--------------- SIDE NAV FILTERS ----------------*/
 
-
 .brand,
 .type,
 .style,
 .size,
 .price,
-.colours
-{
+.colours {
   float: left;
   width: 89%;
   text-align: left;
@@ -917,7 +966,7 @@ label {
   border-bottom: 0.9px solid #ccc;
 }
 
-.sidenav .buttons{
+.sidenav .buttons {
   float: left;
   width: 89%;
   text-align: left;
@@ -928,7 +977,13 @@ label {
   padding-bottom: 1%;
 }
 
-.sidenav #clearfilters{
+.buttons{
+  padding-top: 4%;
+  border-bottom: 0.9px solid #ccc;
+  padding-bottom: 4%;
+}
+
+.sidenav #clearfilters {
   width: 50%;
   padding: 7px 5px 7px 5px;
   font-size: 15px;
@@ -940,7 +995,34 @@ label {
   text-align: center;
 }
 
-.sidenav #applyfilters{
+#clearfilters {
+  width: 50%;
+  padding: 7px 5px 7px 5px;
+  font-size: 15px;
+  font-weight: 550;
+  float: left;
+  left: 0;
+  background: white;
+  border-right: 0.9px solid #ccc;
+  text-align: center;
+}
+
+#clearfilters:hover,
+#applyfilters:hover{
+  color: #adadad;
+  transition: .3s;
+}
+
+.sidenav #applyfilters {
+  width: 50%;
+  padding: 7px 5px 7px 5px;
+  font-size: 15px;
+  font-weight: 550;
+  background: white;
+  text-align: center;
+}
+
+#applyfilters {
   width: 50%;
   padding: 7px 5px 7px 5px;
   font-size: 15px;
@@ -954,17 +1036,17 @@ label {
 #style-text,
 #size-text,
 #price-text,
-#colours-text{
+#colours-text {
   padding-bottom: 15px;
   font-size: 16px;
 }
 
-.sidenav .checkbox label{
+.sidenav .checkbox label {
   font-size: 15px;
   padding-top: 3px;
 }
 
-.sidenav .colours-menu{
+.sidenav .colours-menu {
   margin-top: 4%;
 }
 
@@ -980,12 +1062,12 @@ label {
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;
-   -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   transition: 0.5s;
   padding-top: 40px;
 }
 
-.overlay{
+.overlay {
   min-height: 100%;
   max-height: 100%;
   width: 0;
@@ -1007,10 +1089,9 @@ label {
   color: #818181;
   display: block;
   transition: 0.3s;
-
 }
 
-.sidenav a:hover{
+.sidenav a:hover {
   color: #f1f1f1;
 }
 
@@ -1022,14 +1103,18 @@ label {
   margin-left: 45px;
 }
 
-.sidenav .price-wrap #one{
+.sidenav .price-wrap #one {
   margin-right: 26px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 
-
+/*--------- 5. RIGHT PANEL - PRODUCTS -------------*/
